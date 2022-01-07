@@ -1,0 +1,123 @@
+.table-wrapper {
+  display: flex;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.table tr,
+.table td {
+  padding: 10px 20px;
+}
+
+.table-header {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.headings-list-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.table-body {
+  background-color: var(--white);
+  position: relative;
+}
+
+.table-body tr {
+  cursor: pointer;
+  border-bottom: 1px solid var(--grey);
+}
+
+.table-body tr:last-child {
+  border: none;
+}
+
+.table-body tr:hover {
+  background-color: var(--grey);
+}
+
+.table-body tr.selected {
+  background-color: var(--grey);
+}
+
+.text-right {
+  text-align: right;
+}
+
+.column-select-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(13,65,66,.2);
+}
+
+.column-select-box {
+  position: absolute;
+  background-color: var(--white);
+  top: 0;
+  right: 0;
+}
+
+.column-select-option {
+  padding: 10px;
+  min-width: 150px;
+}
+
+.column-select-option:not(:last-child) {
+  border-bottom: 1px solid var(--grey);
+}
+
+.contact-information {
+  background-color: var(--grey);
+  border-bottom-right-radius: 10px;
+  border-top: 38px solid var(--primary);
+  padding: 20px;
+}
+
+.contact-image-wrapper {
+  border: 10px solid var(--white);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.contact-image {
+  width: 200px;
+}
+
+.contact-information-details {
+  display: flex;
+}
+
+.contact-information-titles {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact-information-title {
+  color: #5d5c53;
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contact-information-detail {
+  display: flex;
+  flex-direction: column;
+}

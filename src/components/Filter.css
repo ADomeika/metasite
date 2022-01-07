@@ -1,0 +1,38 @@
+.filter {
+  align-items: center;
+  background-color: rgba(51, 66, 168, 0.2);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  color: white;
+  padding: 20px;
+  flex: 1;
+}
+
+.filter > * {
+  margin-right: 14px;
+}
+
+.filter input[type="text"],
+.filter select {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  color: var(--white);
+  min-width: 170px;
+}
+
+.filter input[type="text"]::placeholder {
+  color: var(--white);
+}
+
+.filter-button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 30px;
+  color: var(--white);
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
